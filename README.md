@@ -27,7 +27,9 @@ website/
     │   └── tooltip.js      ← tooltip menu ponsel (ketuk logo), tiap muat ulang
     └── img/
         ├── favicon.webp    ← favicon tab browser & shortcut icon
-        ├── DMC.webp        ← logo wordmark DMC (nav kiri/ketuk-menu ponsel, tirai, modal, og:image)
+        ├── DMC.webp        ← logo wordmark DMC (nav kiri/ketuk-menu ponsel, tirai, modal)
+        ├── kala.webp       ← ilustrasi maskot penyu Kala (hero section)
+        ├── og-hero.png     ← thumbnail preview saat link dibagikan (Open Graph & Twitter Card)
         ├── founder.svg     ← foto placeholder pendiri (siluet; ganti foto asli)
         └── co-founder.svg  ← foto placeholder co-pendiri (siluet; ganti foto asli)
 ```
@@ -53,9 +55,9 @@ website/
 
 ## Hal yang perlu diganti pemilik (cari `TODO`)
 
-1. Tautan WhatsApp/Instagram (nav, modal, footer): masih `#`.
+1. Tautan WhatsApp (modal, footer): masih `#` (Instagram sudah mengarah ke akun resmi komunitas).
 2. Angka statistik & testimoni di `index.html`: placeholder fiksi.
 3. Ritme sesi di `programs.html`: sesuaikan kebiasaan komunitas.
 4. Font Google (Baloo 2 + Nunito): bisa dibawa lokal ke `assets/fonts`.
 5. Digital Class (kelas online): tautan detail di kartu index diganti badge "Coming soon" (tidak menaut ke halaman program); catatan polos "Coming soon" pada detail dan chip programs.html dihapus begitu kelasnya siap dijalankan.
-6. Section founder (`index.html`): foto, nama, dan keterangan pendiri & co-pendiri masih placeholder (siluet SVG, nama fiktif); ganti dengan foto dan data asli. Akun Instagram di kedua kartu masih `instagram.com`; ganti href dengan akun asli masing-masing.
+6. Section founder (`index.html`): foto, nama, dan keterangan pendiri & co-pendiri masih placeholder (siluet SVG, nama fiktif); ganti dengan foto dan data asli. Tombol Instagram kedua kartu telah mengarah ke akun resmi komunitas.
