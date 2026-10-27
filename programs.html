@@ -12,17 +12,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20" />
+  <link rel="stylesheet" href="assets/css/style.css?v=22" />
   <!-- Bootstrap Icons: font ikon lokal (assets/vendor) -->
   <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" />
   <!-- Satu modul JS per fungsi; i18n.js dimuat lebih dulu (kamus bahasa) -->
-  <script src="assets/js/i18n.js?v=19" defer></script>
+  <script src="assets/js/i18n.js?v=21" defer></script>
   <script src="assets/js/transition.js?v=18" defer></script>
   <script src="assets/js/nav.js?v=18" defer></script>
   <script src="assets/js/reveal.js?v=18" defer></script>
   <script src="assets/js/modal.js?v=18" defer></script>
   <script src="assets/js/stats.js?v=19" defer></script>
   <script src="assets/js/tilt.js?v=18" defer></script>
+  <script src="assets/js/tooltip.js?v=19" defer></script>
 </head>
 
 <body data-meta-title="meta.title.programs" data-meta-desc="meta.desc.programs">
@@ -55,6 +56,15 @@
       </div>
     </div>
   </header>
+
+  <!-- Tooltip ponsel: petunjuk ketuk logo untuk membuka menu.
+       Muncul setiap muat ulang (tanpa penyimpanan), hanya < 810px (CSS). -->
+  <div class="tip-menu" role="status">
+    <p class="tip-menu__text" data-i18n="tip.text">Tap the logo to open the menu</p>
+    <button class="btn btn--coral btn--sm tip-menu__btn" type="button" data-tip-close>
+      <span data-i18n="tip.ok">Got it</span>
+    </button>
+  </div>
 
   <div class="nav__sheet" id="menu-sheet">
     <button class="sheet__close" data-close-menu aria-label="Close menu / tutup menu">

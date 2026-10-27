@@ -1275,3 +1275,51 @@ html:not(.js) .page-curtain { display: none; }
   .flow { grid-template-columns: repeat(2, 1fr); }
   .flow li:nth-last-child(1):nth-child(odd) { grid-column: 1 / -1; }
 }
+
+/* ---------- 16. Tooltip menu ponsel (petunjuk ketuk logo) ----------
+   Tampil SETIAP muat ulang di ponsel; munculkan/hilangkan murni via CSS
+   media query (desktop tak pernah melihatnya, JS tak perlu cek ukuran). */
+.tip-menu { display: none; }
+@media (max-width: 809.98px) {
+  .tip-menu:not([hidden]) {
+    display: grid;
+    gap: 0.7rem;
+    justify-items: center;
+    position: fixed;
+    /* Disejajarkan tengah: logo DMC juga di tengah nav saat ponsel */
+    top: calc(var(--nav-h) + 0.55rem);
+    left: 0;
+    right: 0;
+    z-index: 45;
+    margin-inline: auto;
+    width: max-content;
+    max-width: calc(100vw - 1.6rem);
+    padding: 1.05rem 1.3rem 1.15rem;
+    background: var(--paper);
+    border: 3px solid var(--ink);
+    border-radius: var(--radius-lg);
+    box-shadow: 5px 6px 0 color-mix(in srgb, var(--ink) 18%, transparent);
+    animation: popIn 0.28s var(--ease-pop);
+  }
+  /* Ujung panah kecil: pas di tengah atas, menunjuk tegak ke logo DMC */
+  .tip-menu::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    margin-left: -8px;
+    width: 16px;
+    height: 16px;
+    background: var(--paper);
+    border-top: 3px solid var(--ink);
+    border-left: 3px solid var(--ink);
+    border-radius: 4px 0 0 0;
+    transform: rotate(45deg);
+  }
+  .tip-menu__text {
+    text-align: center;
+    font-weight: 700;
+    color: var(--ink-soft);
+    line-height: 1.45;
+  }
+}

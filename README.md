@@ -34,7 +34,8 @@ website/
     │   ├── faq.js          ← akordion FAQ
     │   ├── modal.js        ← dialog "Join", jebakan fokus
     │   ├── stats.js        ← penghitung statistik + tahun footer
-    │   └── tilt.js         ← tepet 3D kartu
+    │   ├── tilt.js         ← tepet 3D kartu
+    │   └── tooltip.js      ← tooltip menu ponsel (ketuk logo), tiap muat ulang
     └── img/
         ├── favicon.svg     ← ikon bintang kilau (tab browser)
         ├── DMC.webp        ← logo wordmark DMC (nav kiri/ketuk-menu ponsel, tirai, modal, og:image)
@@ -55,6 +56,7 @@ website/
 | Ikon | Emotikon diganti ikon Bootstrap Icons (chip, bintang dekoratif, ikon sajian) memakai font lokal di `assets/vendor` |
 | Section founder | Kartu pendiri & co-pendiri di bawah testimonial: foto besar selebar kartu (bingkai membulat 4:3) berisi siluet SVG, peran + latar belakang tiga bahasa (data-i18n), tombol Instagram (tab baru), efek tilt ikut kelas `card`, desktop dua kartu berdampingan `repeat(2, 1fr)` |
 | Kredit footer | Baris "Developed and designed by" + chip `adhiwibowo` → `adhiwibowo.my.id` (tab baru), teks ikut tiga bahasa |
+| Tooltip menu ponsel | Kartu kecil bergaya kartu di bawah logo (< 810px), panah ke logo, tombol "Mengerti"; tampil ulang setiap muat, tiga bahasa (`tip.*`) |
 | Sticker text | `-webkit-text-stroke` + `paint-order: stroke fill` + bayangan keras |
 | Hover 3D | Tombol melempar bayangan, kartu tilt via pointer |
 | Marquee | Strip teks berjalan (jeda saat hover) |
