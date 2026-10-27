@@ -35,27 +35,48 @@
 
   <a class="skip-link" href="#main"><span data-i18n="a11y.skip">Skip to content →</span></a>
 
-  <header class="nav">
-    <div class="wrap nav__inner">
-      <a class="nav__brand" href="index.html" data-page>
-        <img class="brand-logo" src="assets/img/DMC.webp" alt="Dreamy English Community" width="967" height="272" decoding="async" fetchpriority="high">
-      </a>
-
-      <nav class="nav__links" aria-label="Main">
-        <a href="index.html" data-page><span data-i18n="nav.home">Home</span></a>
-        <a href="index.html#why" data-page><span data-i18n="nav.why">Why Dreamy?</span></a>
-        <a href="programs.html" aria-current="page"><span data-i18n="nav.programs">Programs</span></a>
-        <a href="index.html#voices" data-page><span data-i18n="nav.voices">Voices</span></a>
-        <a href="index.html#faq" data-page><span data-i18n="nav.faq">FAQ</span></a>
-      </nav>
-
-      <div class="nav__actions">
-        <button class="btn btn--coral btn--sm" data-open-modal>
-          <span data-i18n="btn.join">Join us</span>
+  <!-- ==================== HEADER STICKY (DEV BANNER + NAV) ==================== -->
+  <div class="header-sticky">
+    <!-- Section Under Development diatas navbar (tetap sticky saat discroll) -->
+    <aside class="dev-banner" aria-label="Under Development announcement">
+      <div class="wrap dev-banner__inner">
+        <div class="dev-banner__content">
+          <span class="dev-banner__badge">
+            <i class="bi bi-cone-striped" aria-hidden="true"></i>
+            <span data-i18n="dev.topbar.badge">Under Development</span>
+          </span>
+          <span class="dev-banner__msg hide-mobile" data-i18n="dev.topbar.msg">Web ini masih masa development</span>
+        </div>
+        <button type="button" class="dev-banner__btn" data-open-dev-modal aria-label="Lihat detail status development">
+          <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+          <span data-i18n="dev.topbar.btn">Detail</span>
         </button>
       </div>
-    </div>
-  </header>
+    </aside>
+
+    <!-- Navigasi -->
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html" data-page>
+          <img class="brand-logo" src="assets/img/DMC.webp" alt="Dreamy English Community" width="967" height="272" decoding="async" fetchpriority="high">
+        </a>
+
+        <nav class="nav__links" aria-label="Main">
+          <a href="index.html" data-page><span data-i18n="nav.home">Home</span></a>
+          <a href="index.html#why" data-page><span data-i18n="nav.why">Why Dreamy?</span></a>
+          <a href="programs.html" aria-current="page"><span data-i18n="nav.programs">Programs</span></a>
+          <a href="index.html#voices" data-page><span data-i18n="nav.voices">Voices</span></a>
+          <a href="index.html#faq" data-page><span data-i18n="nav.faq">FAQ</span></a>
+        </nav>
+
+        <div class="nav__actions">
+          <button class="btn btn--coral btn--sm" data-open-modal>
+            <span data-i18n="btn.join">Join us</span>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
 
   <!-- Tooltip ponsel: petunjuk ketuk logo untuk membuka menu.
        Muncul setiap muat ulang (tanpa penyimpanan), hanya < 810px (CSS). -->
@@ -205,11 +226,56 @@
     <p class="foot-credit">
       Developed and designed by
       <a href="https://adhiwibowo.my.id" target="_blank" rel="noopener">adhiwibowo <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
+      <button type="button" class="foot-dev-btn" data-open-dev-modal aria-label="Lihat status development"><i class="bi bi-info-circle-fill" aria-hidden="true"></i> <span data-i18n="dev.status_btn">Status Dev</span></button>
     </p>
   </footer>
 
+  <!-- ==================== MODAL (UNDER DEVELOPMENT) ==================== -->
+  <div class="modal modal--dev" id="modal-dev" role="dialog" aria-modal="true" aria-labelledby="dev-modal-badge" hidden>
+    <div class="modal__backdrop" data-close-dev-modal></div>
+    <div class="modal__shell dev-modal__shell">
+      <button class="modal__close dev-modal__close" data-close-dev-modal aria-label="Tutup / Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+
+      <div class="modal__panel dev-modal__panel">
+        <div class="dev-modal__badge" id="dev-modal-badge">
+          <i class="bi bi-cone-striped" aria-hidden="true"></i>
+          <span data-i18n="dev.badge">Under Development</span>
+        </div>
+
+        <img class="modal__logo" src="assets/img/DMC.webp" alt="Dreamy English Community" width="967" height="272" decoding="async">
+
+        <div class="dev-modal__card">
+          <p class="dev-modal__text" data-i18n="dev.desc">
+            Website ini saat ini masih dalam masa development oleh <strong>adhiwibowo</strong>. Kamu bisa mencoba demo interaktif untuk melihat tampilan dan fitur, atau hubungi developer langsung jika ada pertanyaan maupun keperluan kerjasama.
+          </p>
+          <div class="dev-modal__author">
+            <span class="dev-modal__avatar"><i class="bi bi-person-fill" aria-hidden="true"></i></span>
+            <span>
+              <span data-i18n="dev.author_by">Developer:</span>
+              <a href="https://adhiwibowo.my.id" target="_blank" rel="noopener" class="dev-modal__author-link">adhiwibowo <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
+            </span>
+          </div>
+        </div>
+
+        <div class="dev-modal__actions">
+          <button type="button" class="btn btn--coral dev-modal__btn" data-close-dev-modal id="btn-coba-demo">
+            <i class="bi bi-play-circle-fill" aria-hidden="true"></i>
+            <span data-i18n="dev.demo">Coba Demo</span>
+          </button>
+          <a class="btn btn--ghost dev-modal__btn" href="https://adhiwibowo.my.id" target="_blank" rel="noopener" id="btn-hubungi-dev">
+            <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+            <span data-i18n="dev.contact">Hubungi Developer</span>
+            <i class="bi bi-box-arrow-up-right" style="font-size:0.82em;" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Modal join (identik dengan halaman utama) -->
-  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="join-title" hidden>
+  <div class="modal" id="modal-join" role="dialog" aria-modal="true" aria-labelledby="join-title" hidden>
     <div class="modal__backdrop" data-close-modal></div>
     <div class="modal__panel">
       <button class="modal__close" data-close-modal aria-label="Close">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dreamy English Community · Pacitan | Speak. Shine. Dream.</title>
+  <title>Dreamy English Community · Pacitan | Speak, spark, succeed</title>
   <meta name="description" content="A fun English learning community in Pacitan: speak, play, perform. Join the community!" />
   <meta property="og:title" content="Dreamy English Community · Pacitan" />
   <meta property="og:description" content="A fun English learning community in Pacitan: speak, play, perform." />
@@ -46,27 +46,47 @@
   <!-- Lewati ke konten utama (aksesibilitas) -->
   <a class="skip-link" href="#main"><span data-i18n="a11y.skip">Skip to content →</span></a>
 
-  <!-- ==================== NAVIGASI STICKY ==================== -->
-  <header class="nav">
-    <div class="wrap nav__inner">
-      <a class="nav__brand" href="index.html" data-page>
-        <img class="brand-logo" src="assets/img/DMC.webp" alt="Dreamy English Community" width="967" height="272" decoding="async" fetchpriority="high">
-      </a>
-
-      <nav class="nav__links" aria-label="Main">
-        <a href="#why"><span data-i18n="nav.why">Why Dreamy?</span></a>
-        <a href="programs.html" data-page><span data-i18n="nav.programs">Programs</span></a>
-        <a href="#voices"><span data-i18n="nav.voices">Voices</span></a>
-        <a href="#faq"><span data-i18n="nav.faq">FAQ</span></a>
-      </nav>
-
-      <div class="nav__actions">
-        <button class="btn btn--coral btn--sm" data-open-modal>
-          <span data-i18n="btn.join">Join us</span>
+  <!-- ==================== HEADER STICKY (DEV BANNER + NAV) ==================== -->
+  <div class="header-sticky">
+    <!-- Section Under Development diatas navbar (tetap sticky saat discroll) -->
+    <aside class="dev-banner" aria-label="Under Development announcement">
+      <div class="wrap dev-banner__inner">
+        <div class="dev-banner__content">
+          <span class="dev-banner__badge">
+            <i class="bi bi-cone-striped" aria-hidden="true"></i>
+            <span data-i18n="dev.topbar.badge">Under Development</span>
+          </span>
+          <span class="dev-banner__msg hide-mobile" data-i18n="dev.topbar.msg">Web ini masih masa development</span>
+        </div>
+        <button type="button" class="dev-banner__btn" data-open-dev-modal aria-label="Lihat detail status development">
+          <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+          <span data-i18n="dev.topbar.btn">Detail</span>
         </button>
       </div>
-    </div>
-  </header>
+    </aside>
+
+    <!-- Navigasi -->
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html" data-page>
+          <img class="brand-logo" src="assets/img/DMC.webp" alt="Dreamy English Community" width="967" height="272" decoding="async" fetchpriority="high">
+        </a>
+
+        <nav class="nav__links" aria-label="Main">
+          <a href="#why"><span data-i18n="nav.why">Why Dreamy?</span></a>
+          <a href="programs.html" data-page><span data-i18n="nav.programs">Programs</span></a>
+          <a href="#voices"><span data-i18n="nav.voices">Voices</span></a>
+          <a href="#faq"><span data-i18n="nav.faq">FAQ</span></a>
+        </nav>
+
+        <div class="nav__actions">
+          <button class="btn btn--coral btn--sm" data-open-modal>
+            <span data-i18n="btn.join">Join us</span>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
 
   <!-- Tooltip ponsel: petunjuk ketuk logo untuk membuka menu.
        Muncul setiap muat ulang (tanpa penyimpanan), hanya < 810px (CSS). -->
@@ -97,9 +117,9 @@
       <div class="wrap hero__inner">
         <div>
           <h1 class="reveal sticker" style="--d:1">
-            <span data-i18n="hero.l1">Dream it.</span><br />
-            <span class="accent" data-i18n="hero.l2">Speak it.</span><br />
-            <span class="accent--coral" data-i18n="hero.l3">Shine out!</span>
+            <span>Speak,</span><br />
+            <span class="accent">Spark,</span><br />
+            <span class="accent--coral">Succeed</span>
           </h1>
           <p class="hero__lead reveal" style="--d:2" data-i18n="hero.lead">
             Practice English the fun way: chatting, playing games, and performing
@@ -119,25 +139,33 @@
           </p>
         </div>
 
-        <!-- Ilustrasi kartu melayang (tanpa gambar = cepat dimuat) -->
-        <div class="hero__art reveal" style="--d:3" aria-hidden="true">
-          <div class="hero-card hero-card--sun" style="--rot:-6deg">
-            <svg viewBox="0 0 48 48" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="24" cy="24" r="17"/>
-              <circle cx="18" cy="21" r="1.6" fill="var(--ink)"/>
-              <circle cx="30" cy="21" r="1.6" fill="var(--ink)"/>
-              <path d="M17 29c2.2 2.6 4.6 3.8 7 3.8s4.8-1.2 7-3.8"/>
+        <!-- Maskot Kala dan Bubble Awan -->
+        <div class="hero__mascot reveal" style="--d:3">
+          <div class="speech-cloud" role="region" aria-label="Greeting from Kala">
+            <svg class="speech-cloud__shape" viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="
+                M 70 50
+                A 45 42 0 0 1 150 25
+                A 48 45 0 0 1 235 30
+                A 44 42 0 0 1 295 65
+                A 42 42 0 0 1 315 125
+                A 44 44 0 0 1 285 180
+                A 42 40 0 0 1 235 200
+                L 282 254
+                L 205 204
+                A 45 42 0 0 1 145 208
+                A 46 42 0 0 1 85 198
+                A 42 42 0 0 1 40 155
+                A 44 45 0 0 1 30 95
+                A 44 42 0 0 1 70 50
+                Z
+              " fill="var(--paper)" stroke="var(--ink)" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
             </svg>
+            <div class="speech-cloud__content">
+              <p class="speech-cloud__text" data-i18n="hero.kala_greeting">“Hello!<br>How was<br>your day?”</p>
+            </div>
           </div>
-          <div class="hero-card hero-card--sky" style="--rot:5deg">
-            <svg viewBox="0 0 48 48" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 22c0-8 8-14 18-14s18 6 18 14-8 14-18 14c-3.4 0-6.6-.7-9.4-2L7 40l2.4-7.2A13.7 13.7 0 0 1 6 22z"/>
-              <path d="M16 20h16M16 26h10"/>
-            </svg>
-          </div>
-          <div class="hero-card hero-card--paper">
-            <p class="gc">“Hello!<br>How was<br>your day?”</p>
-          </div>
+          <img class="hero__mascot-img" src="assets/img/kala.webp" alt="Kala - Dreamy English Community Mascot" width="480" height="640" fetchpriority="high" decoding="async">
         </div>
       </div>
 
@@ -150,7 +178,7 @@
     <!-- TODO: ganti angka sesuai data komunitas -->
     <div class="stats">
       <div class="stat reveal">
-        <div class="stat__num" data-count="100" data-suffix="++"><span class="num">100</span><span class="suffix">++</span></div>
+        <div class="stat__num" data-count="100" data-suffix="++"><span class="num">100</span><span class="suffix">+</span></div>
         <div class="stat__label" data-i18n="stat.members">Active members</div>
       </div>
       <div class="stat reveal">
@@ -302,8 +330,8 @@
             </div>
             <blockquote data-i18n="q1">“I finally dare to speak in front of people. My first talk was shaky, but everyone cheered!”</blockquote>
             <figcaption>
-              <span class="avatar" style="--av: var(--pink)">R</span>
-              <span class="who"><strong>Rani</strong><span data-i18n="role1">Student</span></span>
+              <span class="avatar" style="--av: var(--pink)">U</span>
+              <span class="who"><strong>Umpamane</strong><span data-i18n="role1">Student</span></span>
             </figcaption>
           </figure>
 
@@ -317,8 +345,8 @@
             </div>
             <blockquote data-i18n="q2">“It feels like playing games, not an English class. I keep coming back without feeling forced.”</blockquote>
             <figcaption>
-              <span class="avatar" style="--av: var(--sky)">D</span>
-              <span class="who"><strong>Dika</strong><span data-i18n="role2">Cashier and member</span></span>
+              <span class="avatar" style="--av: var(--sky)">M</span>
+              <span class="who"><strong>Menowo Ono</strong><span data-i18n="role2">Cashier and member</span></span>
             </figcaption>
           </figure>
 
@@ -332,8 +360,8 @@
             </div>
             <blockquote data-i18n="q3">“The mentors give feedback that lifts you up. Now I help new members find their voice too.”</blockquote>
             <figcaption>
-              <span class="avatar" style="--av: var(--leaf)">S</span>
-              <span class="who"><strong>Sinta</strong><span data-i18n="role3">Mentor volunteer</span></span>
+              <span class="avatar" style="--av: var(--leaf)">P</span>
+              <span class="who"><strong>Pokoke Gas Terus</strong><span data-i18n="role3">Mentor volunteer</span></span>
             </figcaption>
           </figure>
         </div>
@@ -356,7 +384,7 @@
           </div>
           <figcaption>
             <strong class="founder-name">Mboh Ra Ngerti</strong>
-            <span class="founder-role" style="color:var(--coral)" data-i18n="fdn.founder.role">Founder</span>
+            <span class="founder-role" style="color:var(--coral)">Founder</span>
             <span class="founder-bio" data-i18n="fdn.founder.bio">Started Dreamy after seeing how hard it is to practice English outside class. Believes in learning by talking, laughing, and trying again.</span>
             <!-- TODO: ganti href dengan akun Instagram asli pendiri -->
             <a class="btn btn--ghost btn--sm founder-ig" href="https://instagram.com" target="_blank" rel="noopener"><i class="bi bi-instagram" aria-hidden="true"></i> <span>Instagram</span></a>
@@ -369,7 +397,7 @@
           </div>
           <figcaption>
             <strong class="founder-name">Mboh Ra Ngerti</strong>
-            <span class="founder-role" style="color:var(--grape)" data-i18n="fdn.co.role">Co-founder</span>
+            <span class="founder-role" style="color:var(--grape)">Co-founder</span>
             <span class="founder-bio" data-i18n="fdn.co.bio">Runs the weekly meetups and makes sure every newcomer gets a warm welcome; the friendly glue of the community.</span>
             <!-- TODO: ganti href dengan akun Instagram asli co-pendiri -->
             <a class="btn btn--ghost btn--sm founder-ig" href="https://instagram.com" target="_blank" rel="noopener"><i class="bi bi-instagram" aria-hidden="true"></i> <span>Instagram</span></a>
@@ -449,11 +477,55 @@
     <p class="foot-credit">
       Developed and designed by
       <a href="https://adhiwibowo.my.id" target="_blank" rel="noopener">adhiwibowo <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
+      <button type="button" class="foot-dev-btn" data-open-dev-modal aria-label="Lihat status development"><i class="bi bi-info-circle-fill" aria-hidden="true"></i> <span data-i18n="dev.status_btn">Status Dev</span></button>
     </p>
   </footer>
 
+  <!-- ==================== MODAL (UNDER DEVELOPMENT) ==================== -->
+  <div class="modal modal--dev" id="modal-dev" data-auto-open role="dialog" aria-modal="true" aria-labelledby="dev-modal-badge" hidden>
+    <div class="modal__backdrop" data-close-dev-modal></div>
+    <div class="modal__shell dev-modal__shell">
+      <button class="modal__close dev-modal__close" data-close-dev-modal aria-label="Tutup / Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+
+      <div class="modal__panel dev-modal__panel">
+        <div class="dev-modal__badge" id="dev-modal-badge">
+          <i class="bi bi-cone-striped" aria-hidden="true"></i>
+          <span data-i18n="dev.badge">Masa Development</span>
+        </div>
+
+        <img class="modal__logo" src="assets/img/DMC.webp" alt="Dreamy English Community" width="967" height="272" decoding="async">
+
+        <div class="dev-modal__card">
+          <p class="dev-modal__text" data-i18n="dev.desc">
+            Website ini saat ini masih dalam masa development oleh <strong>adhiwibowo</strong>. Kamu bisa mencoba demo interaktif untuk melihat tampilan dan fitur, atau hubungi developer langsung jika ada pertanyaan maupun keperluan kerjasama.
+          </p>
+          <div class="dev-modal__author">
+            <span class="dev-modal__avatar"><i class="bi bi-person-fill" aria-hidden="true"></i></span>
+            <span>
+              <span data-i18n="dev.author_by">Developer:</span>
+              <a href="https://adhiwibowo.my.id" target="_blank" rel="noopener" class="dev-modal__author-link">adhiwibowo <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
+            </span>
+          </div>
+        </div>
+
+        <div class="dev-modal__actions">
+          <button type="button" class="btn btn--coral dev-modal__btn" data-close-dev-modal id="btn-coba-demo">
+            <i class="bi bi-play-circle-fill" aria-hidden="true"></i>
+            <span data-i18n="dev.demo">Coba Demo</span>
+          </button>
+          <a class="btn btn--ghost dev-modal__btn" href="https://adhiwibowo.my.id" target="_blank" rel="noopener" id="btn-hubungi-dev">
+            <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+            <span data-i18n="dev.contact">Hubungi Developer</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ==================== MODAL (JOIN) ==================== -->
-  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="join-title" hidden>
+  <div class="modal" id="modal-join" role="dialog" aria-modal="true" aria-labelledby="join-title" hidden>
     <div class="modal__backdrop" data-close-modal></div>
     <div class="modal__panel">
       <button class="modal__close" data-close-modal aria-label="Close">

@@ -12,7 +12,7 @@
   window.DMC_I18N = {
     en: {
       /* meta per halaman */
-      "meta.title.index": "Dreamy English Community · Pacitan | Speak. Shine. Dream.",
+      "meta.title.index": "Dreamy English Community · Pacitan | Speak, spark, succeed",
       "meta.desc.index": "A fun English learning community in Pacitan: speak, play, perform. Join the community!",
       "meta.title.programs": "Programs · Dreamy English Community Pacitan",
       "meta.desc.programs": "Training programs at Dreamy English Community Pacitan: weekly Speaking Club, Dreamy Camp, and Digital Class.",
@@ -37,14 +37,12 @@
       "sheet.tag.index": "Learn English together, the fun way",
       "sheet.tag.programs": "Pick your class, come along, keep talking",
 
-      /* hero */
-      "hero.l1": "Dream it.",
-      "hero.l2": "Speak it.",
-      "hero.l3": "Shine out!",
+      /* hero (tagline tetap dalam bahasa Inggris murni di HTML) */
       "hero.lead": "Practice English the fun way: chatting, playing games, and performing together with the community in Pacitan.",
       "hero.cta1": "Join the community",
       "hero.cta2": "Explore programs",
       "hero.note": "No pressure, no judgement, all levels welcome.",
+      "hero.kala_greeting": "“Hello!<br>How was<br>your day?”",
 
       /* statistik */
       "stat.members": "Active members",
@@ -140,13 +138,23 @@
 
       /* footer & modal */
       "foot.about": "Learning English together with the Pacitan community, a human way.",
-"modal.title": "Join Dreamy!",
+      "modal.title": "Join Dreamy!",
       "modal.intro": "Three easy steps to join the community:",
       "modal.s1": "Say hi on our contact, and the admin will greet you.",
       "modal.s2": "Join the community group for schedules.",
       "modal.s3": "Show up and shine at the next meetup!",
       "modal.wa": "Chat via WhatsApp",
       "modal.ig": "DM via Instagram",
+      "dev.badge": "Under Development",
+      "dev.title": "Website Under Development",
+      "dev.desc": "This website is currently under active development by adhiwibowo. Feel free to explore the interactive demo to preview the design and features, or reach out to the developer directly.",
+      "dev.author_by": "Developer:",
+      "dev.demo": "Try Demo",
+      "dev.contact": "Contact Developer",
+      "dev.status_btn": "Dev Status",
+      "dev.topbar.badge": "Under Development",
+      "dev.topbar.msg": "Web is currently under development",
+      "dev.topbar.btn": "Detail",
 
       /* halaman program */
       "pg.eyebrow": "Dreamy programs",
@@ -183,7 +191,7 @@
 
     id: {
       /* meta per halaman */
-      "meta.title.index": "Dreamy English Community · Pacitan | Bicara. Bersinar. Bermimpi.",
+      "meta.title.index": "Dreamy English Community · Pacitan | Speak, spark, succeed",
       "meta.desc.index": "Komunitas belajar bahasa Inggris yang seru di Pacitan: bicara, main, tampil. Gabung sekarang!",
       "meta.title.programs": "Program · Dreamy English Community Pacitan",
       "meta.desc.programs": "Program latihan bahasa Inggris Dreamy English Community Pacitan: Speaking Club mingguan, Dreamy Camp, dan Digital Class.",
@@ -208,14 +216,12 @@
       "sheet.tag.index": "Belajar Inggris bareng, sambil seru-seruan",
       "sheet.tag.programs": "Pilih kelasmu, datang, terus terus bicara",
 
-      /* hero */
-      "hero.l1": "Mimpikan.",
-      "hero.l2": "Ucapkan.",
-      "hero.l3": "Bersinarlah!",
+      /* hero (tagline tetap dalam bahasa Inggris murni di HTML) */
       "hero.lead": "Latihan bahasa Inggris dengan cara seru: ngobrol, main game, dan tampil bersama komunitas di Pacitan.",
       "hero.cta1": "Gabung ke komunitas",
       "hero.cta2": "Lihat program",
       "hero.note": "Tanpa tekanan, tanpa vonis, semua level dipersilakan.",
+      "hero.kala_greeting": "“Hello!<br>How was<br>your day?”",
 
       /* statistik */
       "stat.members": "Anggota aktif",
@@ -283,9 +289,9 @@
       "fdn.rest": "Kenali",
       "fdn.hl": "para pendiri",
       "fdn.sub": "Dua orang yang menjaga mimpi ini tetap hidup di Pacitan.",
-      "fdn.founder.role": "Pendiri",
+      "fdn.founder.role": "Founder",
       "fdn.founder.bio": "Memulai Dreamy setelah melihat betapa beratnya berlatih bahasa Inggris di luar kelas. Percaya belajar lewat bicara, tertawa, dan mencoba lagi.",
-      "fdn.co.role": "Co-pendiri",
+      "fdn.co.role": "Co-founder",
       "fdn.co.bio": "Mengurus pertemuan mingguan dan memastikan setiap pendatang baru disambut hangat; perekat ramah komunitas.",
 
       /* FAQ */
@@ -311,13 +317,23 @@
 
       /* footer & modal */
       "foot.about": "Belajar bahasa Inggris bersama komunitas Pacitan, dengan cara yang manusiawi.",
-"modal.title": "Gabung Dreamy!",
+      "modal.title": "Gabung Dreamy!",
       "modal.intro": "Tiga langkah mudah untuk jadi bagian komunitas:",
       "modal.s1": "Sapa lewat kontak kami, admin akan menyahut.",
       "modal.s2": "Masuk grup komunitas untuk info jadwal.",
       "modal.s3": "Datang dan bersinar di pertemuan berikutnya!",
       "modal.wa": "Chat via WhatsApp",
       "modal.ig": "DM via Instagram",
+      "dev.badge": "Masa Development",
+      "dev.title": "Web Masih Masa Development",
+      "dev.desc": "Website ini saat ini masih dalam masa development oleh adhiwibowo. Kamu bisa mencoba demo interaktif untuk melihat tampilan dan fitur, atau hubungi developer langsung jika ada pertanyaan maupun keperluan kerjasama.",
+      "dev.author_by": "Developer:",
+      "dev.demo": "Coba Demo",
+      "dev.contact": "Hubungi Developer",
+      "dev.status_btn": "Status Dev",
+      "dev.topbar.badge": "Under Development",
+      "dev.topbar.msg": "Web ini masih masa development",
+      "dev.topbar.btn": "Detail",
 
       /* halaman program */
       "pg.eyebrow": "Program Dreamy",
@@ -354,7 +370,7 @@
 
     de: {
       /* meta pro Seite */
-      "meta.title.index": "Dreamy English Community · Pacitan | Sprich. Strahl. Träum.",
+      "meta.title.index": "Dreamy English Community · Pacitan | Speak, spark, succeed",
       "meta.desc.index": "Eine unterhaltsame englische Lern-Community in Pacitan: sprechen, spielen, auftreten. Mach mit!",
       "meta.title.programs": "Programme · Dreamy English Community Pacitan",
       "meta.desc.programs": "Trainingsprogramme der Dreamy English Community Pacitan: wöchentlicher Speaking Club, Dreamy Camp und Digital Class.",
@@ -379,14 +395,12 @@
       "sheet.tag.index": "Gemeinsam Englisch lernen, mit Spaß",
       "sheet.tag.programs": "Wähle deinen Kurs, komm vorbei und bleib dran",
 
-      /* Hero */
-      "hero.l1": "Träum es.",
-      "hero.l2": "Sprich es.",
-      "hero.l3": "Strahl los!",
+      /* Hero (Tagline bleibt rein auf Englisch im HTML) */
       "hero.lead": "Englisch üben auf die lockere Art: reden, Spiele spielen und gemeinsam mit der Community in Pacitan auftreten.",
       "hero.cta1": "Komm in die Community",
       "hero.cta2": "Programme entdecken",
       "hero.note": "Kein Druck, kein Urteil, alle Levels willkommen.",
+      "hero.kala_greeting": "“Hello!<br>How was<br>your day?”",
 
       /* Statistik */
       "stat.members": "Aktive Mitglieder",
@@ -454,9 +468,9 @@
       "fdn.rest": "Lernt",
       "fdn.hl": "die Gründer kennen",
       "fdn.sub": "Zwei Menschen, die den Traum in Pacitan am Leben halten.",
-      "fdn.founder.role": "Gründer",
+      "fdn.founder.role": "Founder",
       "fdn.founder.bio": "Startete Dreamy, als er sah, wie schwer es ist, außerhalb des Unterrichts Englisch zu üben. Er glaubt daran, dass man Englisch durch Sprechen, Lachen und stetiges Weitermachen lernt.",
-      "fdn.co.role": "Co-Gründerin",
+      "fdn.co.role": "Co-founder",
       "fdn.co.bio": "Organisiert die Wochentreffen und begrüßt jedes neue Mitglied herzlich; der freundliche Klebstoff der Community.",
 
       /* FAQ */
@@ -482,13 +496,23 @@
 
       /* Fußzeile & Modal */
       "foot.about": "Englisch lernen mit der Pacitan-Community, auf menschliche Art.",
-"modal.title": "Mach mit bei Dreamy!",
+      "modal.title": "Mach mit bei Dreamy!",
       "modal.intro": "Drei einfache Schritte, um dabeizusein:",
       "modal.s1": "Melde dich bei unserem Kontakt, die Admins antworten.",
       "modal.s2": "Tritt der Community-Gruppe für die Termine bei.",
       "modal.s3": "Komm vorbei und strahle beim nächsten Treffen!",
       "modal.wa": "Chat per WhatsApp",
       "modal.ig": "DM auf Instagram",
+      "dev.badge": "In Entwicklung",
+      "dev.title": "Webseite in Entwicklung",
+      "dev.desc": "Diese Website befindet sich derzeit in der Entwicklung von adhiwibowo. Probieren Sie gerne die interaktive Demo aus oder kontaktieren Sie den Entwickler direkt.",
+      "dev.author_by": "Entwickler:",
+      "dev.demo": "Demo testen",
+      "dev.contact": "Entwickler kontaktieren",
+      "dev.status_btn": "Dev-Status",
+      "dev.topbar.badge": "Under Development",
+      "dev.topbar.msg": "Webseite befindet sich in der Entwicklung",
+      "dev.topbar.btn": "Detail",
 
       /* Programmseite */
       "pg.eyebrow": "Dreamy-Programme",
@@ -545,7 +569,10 @@
   function putTexts(lang) {
     doc.querySelectorAll("[data-i18n]").forEach((el) => {
       const val = dict[lang][el.dataset.i18n];
-      if (val != null) el.textContent = val;
+      if (val != null) {
+        if (val.includes("<")) el.innerHTML = val;
+        else el.textContent = val;
+      }
     });
 
     /* judul dokumen & meta deskripsi mengikuti halaman (data-meta-*) */
