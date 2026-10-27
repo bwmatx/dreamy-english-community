@@ -39,7 +39,7 @@
       "hero.l1": "Dream it.",
       "hero.l2": "Speak it.",
       "hero.l3": "Shine out!",
-      "hero.lead": "Practice English the fun way: talking, playing, and performing together with friendly people.",
+      "hero.lead": "Practice English the fun way: chatting, playing games, and performing together with the community in Pacitan.",
       "hero.cta1": "Join the community",
       "hero.cta2": "Explore programs",
       "hero.note": "No pressure, no judgement, all levels welcome.",
@@ -105,6 +105,16 @@
       "q3": "“The mentors give feedback that lifts you up. Now I help new members find their voice too.”",
       "role3": "Mentor volunteer",
 
+      /* bagian founder */
+      "fdn.eyebrow": "Our founders",
+      "fdn.rest": "Meet the",
+      "fdn.hl": "founders",
+      "fdn.sub": "Two people who keep the dream alive in Pacitan.",
+      "fdn.founder.role": "Founder",
+      "fdn.founder.bio": "Started Dreamy after seeing how hard it is to practice English outside class. Believes in learning by talking, laughing, and trying again.",
+      "fdn.co.role": "Co-founder",
+      "fdn.co.bio": "Runs the weekly meetups and makes sure every newcomer gets a warm welcome; the friendly glue of the community.",
+
       /* FAQ */
       "faq.rest": "Good to",
       "faq.hl": "know",
@@ -128,8 +138,7 @@
 
       /* footer & modal */
       "foot.about": "Learning English together with the Pacitan community, a human way.",
-      "foot.tail": "Dreamy English Community · Pacitan, made with community spirit",
-      "modal.title": "Join Dreamy!",
+"modal.title": "Join Dreamy!",
       "modal.intro": "Three easy steps to join the community:",
       "modal.s1": "Say hi on our contact, and the admin will greet you.",
       "modal.s2": "Join the community group for schedules.",
@@ -265,6 +274,16 @@
       "q3": "“Mentor memberi feedback yang mengangkat. Sekarang saya juga bantu anggota baru menemukan suaranya.”",
       "role3": "Mentor relawan",
 
+      /* bagian founder */
+      "fdn.eyebrow": "Pendiri kami",
+      "fdn.rest": "Kenali",
+      "fdn.hl": "para pendiri",
+      "fdn.sub": "Dua orang yang menjaga mimpi ini tetap hidup di Pacitan.",
+      "fdn.founder.role": "Pendiri",
+      "fdn.founder.bio": "Memulai Dreamy setelah melihat betapa beratnya berlatih bahasa Inggris di luar kelas. Percaya belajar lewat bicara, tertawa, dan mencoba lagi.",
+      "fdn.co.role": "Co-pendiri",
+      "fdn.co.bio": "Mengurus pertemuan mingguan dan memastikan setiap pendatang baru disambut hangat; perekat ramah komunitas.",
+
       /* FAQ */
       "faq.rest": "Perlu",
       "faq.hl": "tahu",
@@ -288,8 +307,7 @@
 
       /* footer & modal */
       "foot.about": "Belajar bahasa Inggris bersama komunitas Pacitan, dengan cara yang manusiawi.",
-      "foot.tail": "Dreamy English Community · Pacitan, dibuat dengan semangat komunitas",
-      "modal.title": "Gabung Dreamy!",
+"modal.title": "Gabung Dreamy!",
       "modal.intro": "Tiga langkah mudah untuk jadi bagian komunitas:",
       "modal.s1": "Sapa lewat kontak kami, admin akan menyahut.",
       "modal.s2": "Masuk grup komunitas untuk info jadwal.",
@@ -359,7 +377,7 @@
       "hero.l1": "Träum es.",
       "hero.l2": "Sprich es.",
       "hero.l3": "Strahl los!",
-      "hero.lead": "Englisch üben auf die lockere Art: reden, spielen und gemeinsam auftreten mit netten Leuten.",
+      "hero.lead": "Englisch üben auf die lockere Art: reden, Spiele spielen und gemeinsam mit der Community in Pacitan auftreten.",
       "hero.cta1": "Komm in die Community",
       "hero.cta2": "Programme entdecken",
       "hero.note": "Kein Druck, kein Urteil, alle Levels willkommen.",
@@ -425,6 +443,16 @@
       "q3": "„Die Mentoren geben Feedback, das dich anhebt. Jetzt helfe ich auch neuen Mitgliedern, ihre Stimme zu finden.“",
       "role3": "Freiwillige Mentorin",
 
+      /* bagian founder */
+      "fdn.eyebrow": "Unsere Gründer",
+      "fdn.rest": "Lernt",
+      "fdn.hl": "die Gründer kennen",
+      "fdn.sub": "Zwei Menschen, die den Traum in Pacitan am Leben halten.",
+      "fdn.founder.role": "Gründer",
+      "fdn.founder.bio": "Startete Dreamy, als er sah, wie schwer es ist, außerhalb des Unterrichts Englisch zu üben. Er glaubt daran, dass man Englisch durch Sprechen, Lachen und stetiges Weitermachen lernt.",
+      "fdn.co.role": "Co-Gründerin",
+      "fdn.co.bio": "Organisiert die Wochentreffen und begrüßt jedes neue Mitglied herzlich; der freundliche Klebstoff der Community.",
+
       /* FAQ */
       "faq.rest": "Gut zu",
       "faq.hl": "wissen",
@@ -448,8 +476,7 @@
 
       /* Fußzeile & Modal */
       "foot.about": "Englisch lernen mit der Pacitan-Community, auf menschliche Art.",
-      "foot.tail": "Dreamy English Community · Pacitan, mit Community-Geist gemacht",
-      "modal.title": "Mach mit bei Dreamy!",
+"modal.title": "Mach mit bei Dreamy!",
       "modal.intro": "Drei einfache Schritte, um dabeizusein:",
       "modal.s1": "Melde dich bei unserem Kontakt, die Admins antworten.",
       "modal.s2": "Tritt der Community-Gruppe für die Termine bei.",

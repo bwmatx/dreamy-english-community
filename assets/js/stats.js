@@ -17,14 +17,15 @@
   const runCounter = (el) => {
     const target = parseInt(el.dataset.count, 10) || 0;
     const prefix = el.dataset.prefix || "";
-    const suffix = el.dataset.suffix || "";
     const numEl = el.querySelector(".num") || el;
     const DUR = 1200;
     const t0 = performance.now();
     const ease = (t) => 1 - Math.pow(1 - t, 3); /* easeOutCubic */
     const frame = (now) => {
       const p = Math.min(1, (now - t0) / DUR);
-      numEl.textContent = prefix + Math.round(target * ease(p)) + suffix;
+      /* Suffix tidak ikut di-append di sini: ia sudah punya span sendiri
+         (.suffix) di markup, supaya tidak muncul dobel saat animasi jalan */
+      numEl.textContent = prefix + Math.round(target * ease(p));
       if (p < 1) requestAnimationFrame(frame);
     };
     requestAnimationFrame(frame);
