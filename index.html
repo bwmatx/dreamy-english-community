@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dreamy English Community · Pacitan | Speak. Shine. Dream.</title>
+  <meta name="description" content="A fun English learning community in Pacitan: speak, play, perform. Join the community!" />
+  <meta property="og:title" content="Dreamy English Community · Pacitan" />
+  <meta property="og:description" content="A fun English learning community in Pacitan: speak, play, perform." />
+  <!-- TODO: saat sudah live di domain, ganti ke URL absolut logonya -->
+  <meta property="og:image" content="assets/img/DMC.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#fdeeda" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <!-- Logo wordmark DMC (asli komunitas) -->
+  <link rel="preload" as="image" type="image/webp" href="assets/img/DMC.webp" />
+
+  <!-- Font gratis (Baloo 2 = display kartun, Nunito = teks). Menggunakan font-display:swap
+       sehingga teks tetap tampil walau font tertunda -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css?v=13" />
+  <!-- Bootstrap Icons: font ikon lokal (assets/vendor) -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" />
+  <!-- Satu modul JS per fungsi; i18n.js dimuat lebih dulu (kamus bahasa) -->
+  <script src="assets/js/i18n.js?v=10" defer></script>
+  <script src="assets/js/transition.js?v=10" defer></script>
+  <script src="assets/js/nav.js?v=10" defer></script>
+  <script src="assets/js/reveal.js?v=10" defer></script>
+  <script src="assets/js/faq.js?v=10" defer></script>
+  <script src="assets/js/modal.js?v=10" defer></script>
+  <script src="assets/js/stats.js?v=10" defer></script>
+  <script src="assets/js/tilt.js?v=10" defer></script>
+</head>
+
+<body data-meta-title="meta.title.index" data-meta-desc="meta.desc.index">
+  <!-- ==================== TIRAI TRANSISI ANTAR HALAMAN ==================== -->
+  <div class="page-curtain" aria-hidden="true">
+    <div class="curtain curtain--a"></div>
+    <div class="curtain curtain--b"><img src="assets/img/DMC.webp" alt="" width="967" height="272" decoding="async"></div>
+  </div>
+
+  <!-- Lewati ke konten utama (aksesibilitas) -->
+  <a class="skip-link" href="#main"><span data-i18n="a11y.skip">Skip to content →</span></a>
+
+  <!-- ==================== NAVIGASI STICKY ==================== -->
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="nav__brand" href="index.html" data-page>
+        <img class="brand-logo" src="assets/img/DMC.webp" alt="Dreamy English Community" width="967" height="272" decoding="async" fetchpriority="high">
+      </a>
+
+      <nav class="nav__links" aria-label="Main">
+        <a href="#why"><span data-i18n="nav.why">Why Dreamy?</span></a>
+        <a href="programs.html" data-page><span data-i18n="nav.programs">Programs</span></a>
+        <a href="#voices"><span data-i18n="nav.voices">Voices</span></a>
+        <a href="#faq"><span data-i18n="nav.faq">FAQ</span></a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="btn btn--coral btn--sm" data-open-modal>
+          <span data-i18n="btn.join">Join us</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu mobile (sheet) -->
+  <div class="nav__sheet" id="menu-sheet">
+    <button class="sheet__close" data-close-menu aria-label="Close menu / tutup menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+    <a href="index.html" data-page><span data-i18n="nav.home">Home</span></a>
+    <a href="#why"><span data-i18n="nav.why">Why Dreamy?</span></a>
+    <a href="programs.html" data-page><span data-i18n="nav.programs">Programs</span></a>
+    <a href="#voices"><span data-i18n="nav.voices">Voices</span></a>
+    <a href="#faq"><span data-i18n="nav.faq">FAQ</span></a>
+    <button class="btn btn--coral" data-open-modal><span data-i18n="sheet.join">Join the community</span></button>
+    <p class="sheet-tag"><i class="bi bi-stars" aria-hidden="true"></i> <span data-i18n="sheet.tag.index">Learn English together, the fun way</span></p>
+  </div>
+
+  <main id="main">
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" data-bg="#fdeeda">
+      <div class="wrap hero__inner">
+        <div>
+          <h1 class="reveal sticker" style="--d:1">
+            <span data-i18n="hero.l1">Dream it.</span><br />
+            <span class="accent" data-i18n="hero.l2">Speak it.</span><br />
+            <span class="accent--coral" data-i18n="hero.l3">Shine out!</span>
+          </h1>
+          <p class="hero__lead reveal" style="--d:2" data-i18n="hero.lead">
+            Practice English the fun way: talking, playing, and performing
+            together with friendly people.
+          </p>
+          <div class="hero__cta reveal" style="--d:3">
+            <button class="btn" data-open-modal>
+              <span data-i18n="hero.cta1">Join the community</span>
+            </button>
+            <a class="btn btn--ghost" href="programs.html" data-page>
+              <span data-i18n="hero.cta2">Explore programs</span>
+            </a>
+          </div>
+          <p class="hero__note reveal" style="--d:4">
+            <i class="bi bi-stars" aria-hidden="true"></i>
+            <span data-i18n="hero.note">No pressure, no judgement, all levels welcome.</span>
+          </p>
+        </div>
+
+        <!-- Ilustrasi kartu melayang (tanpa gambar = cepat dimuat) -->
+        <div class="hero__art reveal" style="--d:3" aria-hidden="true">
+          <div class="hero-card hero-card--sun" style="--rot:-6deg">
+            <svg viewBox="0 0 48 48" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="17"/>
+              <circle cx="18" cy="21" r="1.6" fill="var(--ink)"/>
+              <circle cx="30" cy="21" r="1.6" fill="var(--ink)"/>
+              <path d="M17 29c2.2 2.6 4.6 3.8 7 3.8s4.8-1.2 7-3.8"/>
+            </svg>
+          </div>
+          <div class="hero-card hero-card--sky" style="--rot:5deg">
+            <svg viewBox="0 0 48 48" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 22c0-8 8-14 18-14s18 6 18 14-8 14-18 14c-3.4 0-6.6-.7-9.4-2L7 40l2.4-7.2A13.7 13.7 0 0 1 6 22z"/>
+              <path d="M16 20h16M16 26h10"/>
+            </svg>
+          </div>
+          <div class="hero-card hero-card--paper">
+            <p class="gc">“Hello!<br>How was<br>your day?”</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="mouse"></span> Scroll
+      </div>
+    </section>
+
+    <!-- ==================== STATISTIK ==================== -->
+    <!-- TODO: ganti angka sesuai data komunitas -->
+    <div class="stats">
+      <div class="stat reveal">
+        <div class="stat__num" data-count="250" data-suffix="+"><span class="num">100</span><span class="suffix">+</span></div>
+        <div class="stat__label" data-i18n="stat.members">Active members</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-count="60" data-suffix="+"><span class="num">60</span><span class="suffix">+</span></div>
+        <div class="stat__label" data-i18n="stat.meetups">Meetups hosted</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-count="15" data-suffix=""><span class="num">15</span><span class="suffix"></span></div>
+        <div class="stat__label" data-i18n="stat.mentors">Volunteer mentors</div>
+      </div>
+    </div>
+
+    <!-- ==================== MARQUEE BERJALAN ==================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span><span data-i18n="mq.1">Speak up</span> <b class="spark"><i class="bi bi-stars" aria-hidden="true"></i></b></span><span><span data-i18n="mq.2">Talk with spirit</span> <b class="spark"><i class="bi bi-stars" aria-hidden="true"></i></b></span>
+        <span><span data-i18n="mq.3">Dreamy</span> <b class="spark"><i class="bi bi-stars" aria-hidden="true"></i></b></span><span><span data-i18n="mq.4">Pacitan vibes</span> <b class="spark"><i class="bi bi-stars" aria-hidden="true"></i></b></span>
+        <span><span data-i18n="mq.5">No fear, just fun</span> <b class="spark"><i class="bi bi-stars" aria-hidden="true"></i></b></span><span><span data-i18n="mq.6">See you there</span> <b class="spark"><i class="bi bi-stars" aria-hidden="true"></i></b></span>
+        <!-- salinan kedua untuk loop mulus -->
+        <span><span data-i18n="mq.1">Speak up</span> <b class="spark"><i class="bi bi-stars" aria-hidden="true"></i></b></span><span><span data-i18n="mq.2">Talk with spirit</span> <b class="spark"><i class="bi bi-stars" aria-hidden="true"></i></b></span>
+        <span><span data-i18n="mq.3">Dreamy</span> <b class="spark"><i class="bi bi-stars" aria-hidden="true"></i></b></span><span><span data-i18n="mq.4">Pacitan vibes</span> <b class="spark"><i class="bi bi-stars" aria-hidden="true"></i></b></span>
+        <span><span data-i18n="mq.5">No fear, just fun</span> <b class="spark"><i class="bi bi-stars" aria-hidden="true"></i></b></span><span><span data-i18n="mq.6">See you there</span> <b class="spark"><i class="bi bi-stars" aria-hidden="true"></i></b></span>
+      </div>
+    </div>
+
+    <!-- ==================== MENGAPA DREAMY ==================== -->
+    <section class="why" id="why" data-bg="#e9f7fb">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="nav.why">Why Dreamy?</p>
+          <h2 class="sticker"><span style="color:var(--sky)" data-i18n="why.hl">Learning</span> <span data-i18n="why.rest">that feels like play</span></h2>
+          <p class="section-sub" data-i18n="why.sub">Learning that feels like play, not forced memorizing. Here is how:</p>
+        </div>
+
+        <div class="why__grid" data-stagger>
+          <article class="card" style="--icon-bg: var(--sky)">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="2.5" width="6" height="11" rx="3"/>
+                <path d="M5 11.5a7 7 0 0 0 14 0"/>
+                <path d="M12 18.5V21"/><path d="M8.5 21h7"/>
+              </svg>
+            </div>
+            <h3 data-i18n="card1.t">Speak-up stage</h3>
+            <p data-i18n="card1.b">Weekly practice in front of the crowd, mic time for everyone.</p>
+          </article>
+
+          <article class="card" style="--icon-bg: var(--coral)">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="8.5" cy="8" r="3.2"/>
+                <circle cx="16.5" cy="9" r="2.6"/>
+                <path d="M3 19c.6-3.4 2.8-5.2 5.5-5.2s4.9 1.8 5.5 5.2"/>
+                <path d="M15 13.8c2.8-.4 5.3 1.2 6 5.2"/>
+              </svg>
+            </div>
+            <h3 data-i18n="card2.t">Buddy system</h3>
+            <p data-i18n="card2.b">You get a speaking buddy, and mentors walk with your progress.</p>
+          </article>
+
+          <article class="card" style="--icon-bg: var(--grape)">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2.5" y="7.5" width="19" height="11" rx="5.5"/>
+                <circle cx="8.5" cy="13" r="1.3"/><circle cx="16" cy="13" r="1.3"/>
+                <path d="M5.5 11v4M3.5 13h4"/>
+              </svg>
+            </div>
+            <h3 data-i18n="card3.t">Fun methods</h3>
+            <p data-i18n="card3.b">Games, music, and movie nights; grammar sneaks into play.</p>
+          </article>
+
+          <article class="card" style="--icon-bg: var(--leaf)">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8.5" r="3.6"/>
+                <path d="M12 2.5V4M5.5 5l1 1M18.5 5l-1 1M3.5 9.5h1.6M18.9 9.5h1.6"/>
+                <path d="M2.5 17c2.4-1.6 4.3-1.6 6.6 0s4.2 1.6 6.5 0 4.4-1.6 6 0"/>
+                <path d="M2.5 20.5c2.4-1.6 4.3-1.6 6.6 0s4.2 1.6 6.5 0 4.4-1.6 6 0"/>
+              </svg>
+            </div>
+            <h3 data-i18n="card4.t">Pacitan vibes</h3>
+            <p data-i18n="card4.b">Outdoor sessions: beaches, hills, and sunset conversations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROGRAM ==================== -->
+    <section class="programs" id="programs" data-bg="#f1ecff">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="prog.eyebrow">Our programs</p>
+          <h2 class="sticker"><span data-i18n="prog.rest">Pick your</span> <span style="color:var(--grape)" data-i18n="prog.hl">stage</span></h2>
+          <p class="section-sub" data-i18n="prog.sub">Pick the program that fits; everything is relaxed but consistent.</p>
+        </div>
+
+        <div class="program-grid" data-stagger>
+          <article class="card program" style="--tag-bg: var(--leaf)">
+            <span class="tag" data-i18n="tag.weekly">Weekly</span>
+            <h3 class="sticker" style="font-size:1.5rem">Speaking Club</h3>
+            <p data-i18n="sp.body">Small groups, real conversations, gentle corrections.</p>
+            <ul class="list">
+              <li><span data-i18n="sp.li1">Weekly meetup (60-90 min)</span></li><li><span data-i18n="sp.li2">Rotating everyday topics</span></li><li><span data-i18n="sp.li3">Feedback that stays supportive</span></li>
+            </ul>
+            <a class="more" href="programs.html" data-page><span data-i18n="more.link">See the details</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 5l7 7-7 7"/></svg></a>
+          </article>
+
+          <article class="card program" style="--tag-bg: var(--sun)">
+            <span class="tag" data-i18n="tag.seasonal">Seasonal</span>
+            <h3 class="sticker" style="font-size:1.5rem">Dreamy Camp</h3>
+            <p data-i18n="camp.body">A weekend speak-up camp to perform, win laughs, and grow braver.</p>
+            <ul class="list">
+              <li><span data-i18n="camp.li1">2D1N outdoor camp</span></li><li><span data-i18n="camp.li2">Mini-talk and debate</span></li><li><span data-i18n="camp.li3">Team challenges</span></li>
+            </ul>
+            <a class="more" href="programs.html" data-page><span data-i18n="more.link">See the details</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 5l7 7-7 7"/></svg></a>
+          </article>
+
+          <article class="card program" style="--tag-bg: var(--sky)">
+            <span class="tag" data-i18n="tag.online">Online</span>
+            <h3 class="sticker" style="font-size:1.5rem">Digital Class</h3>
+            <p data-i18n="dc.body">Short online classes, from pronunciation to presentation basics.</p>
+            <ul class="list">
+              <li><span data-i18n="dc.li1">Live and recordings</span></li><li><span data-i18n="dc.li2">Self-paced drills</span></li><li><span data-i18n="dc.li3">Small certificate</span></li>
+            </ul>
+            <!-- Digital Class belum siap: tautan detail diganti lencana statis (tidak menaut) -->
+            <span class="tag tag--soon" aria-disabled="true"><i class="bi bi-hourglass-split" aria-hidden="true"></i> <span data-i18n="soon.badge">Coming soon</span></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SUARA KOMUNITAS ==================== -->
+    <section class="voices" id="voices" data-bg="#fff3d6">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="voc.eyebrow">Community voices</p>
+          <h2 class="sticker"><span data-i18n="voc.rest">They got</span> <span style="color:var(--sun)" data-i18n="voc.hl">braver</span></h2>
+          <p class="section-sub" data-i18n="voc.sub">They all started from zero too. Hear their stories.</p>
+        </div>
+
+        <!-- TODO: ganti nama & kutipan dengan testimonial asli -->
+        <div class="voices__grid" data-stagger>
+          <figure class="quote">
+            <div class="stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+            </div>
+            <blockquote data-i18n="q1">“I finally dare to speak in front of people. My first talk was shaky, but everyone cheered!”</blockquote>
+            <figcaption>
+              <span class="avatar" style="--av: var(--pink)">R</span>
+              <span class="who"><strong>Rani</strong><span data-i18n="role1">Student</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote">
+            <div class="stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+            </div>
+            <blockquote data-i18n="q2">“It feels like playing games, not an English class. I keep coming back without feeling forced.”</blockquote>
+            <figcaption>
+              <span class="avatar" style="--av: var(--sky)">D</span>
+              <span class="who"><strong>Dika</strong><span data-i18n="role2">Cashier and member</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote">
+            <div class="stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+              <svg viewBox="0 0 24 24"><path class="fill" d="M12 2.8l2.8 5.8 6.4 1-4.6 4.5 1.1 6.4L12 17.6l-5.7 2.9 1.1-6.4-4.6-4.5 6.4-1z"/></svg>
+            </div>
+            <blockquote data-i18n="q3">“The mentors give feedback that lifts you up. Now I help new members find their voice too.”</blockquote>
+            <figcaption>
+              <span class="avatar" style="--av: var(--leaf)">S</span>
+              <span class="who"><strong>Sinta</strong><span data-i18n="role3">Mentor volunteer</span></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="faq-section" id="faq" data-bg="#eaf9ef">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="sticker"><span data-i18n="faq.rest">Good to</span> <span style="color:var(--leaf)" data-i18n="faq.hl">know</span></h2>
+          <p class="section-sub" data-i18n="faq.sub">The questions future members ask the most.</p>
+        </div>
+
+        <div class="faq-list" data-stagger>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span data-i18n="fq1">How can I join?</span>
+              <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9l7 7 7-7"/></svg></span>
+            </button>
+            <div class="faq-a"><div><p data-i18n="fa1">Hit “Join the community”, say hi on the contact link, and show up at the next weekly meetup. English level doesn't matter; showing up does.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span data-i18n="fq2">Is it free?</span>
+              <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9l7 7 7-7"/></svg></span>
+            </button>
+            <div class="faq-a"><div><p data-i18n="fa2">Joining is free. Some events ask a small optional donation for snacks or the venue.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span data-i18n="fq3">I am a beginner, can I really join?</span>
+              <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9l7 7 7-7"/></svg></span>
+            </button>
+            <div class="faq-a"><div><p data-i18n="fa3">Absolutely! Beginners are our favorite people. We start with friendly games and pair practice so nobody gets left behind.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span data-i18n="fq4">Where and when do we meet?</span>
+              <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9l7 7 7-7"/></svg></span>
+            </button>
+            <div class="faq-a"><div><p data-i18n="fa4">Weekly meetups rotate between local cafes and outdoor spots around Pacitan; the schedule is announced in the community group chat.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA AKHIR ==================== -->
+    <section class="join" id="join" data-bg="#ffeee9">
+      <div class="wrap">
+        <p class="eyebrow reveal" data-i18n="jn1.eyebrow">Ready when you are</p>
+        <h2 class="reveal sticker" style="--d:1"><span data-i18n="jn1.l1">Bring your voice,</span><br /><span style="color:var(--coral)" data-i18n="jn1.l2">we'll take care of the brave.</span></h2>
+        <p class="section-sub reveal" style="--d:2" data-i18n="jn1.sub">See you at the next meetup!</p>
+        <div class="join__cta reveal" style="--d:3">
+          <button class="btn btn--coral" data-open-modal><span data-i18n="jn1.cta">Join us now</span></button>
+          <a class="btn btn--ghost" href="programs.html" data-page><span data-i18n="jn.browse">Browse programs</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <p class="brand">Dreamy English Community</p>
+        <p data-i18n="foot.about">Learning English together with the Pacitan community, a human way.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <!-- TODO: ganti tautan sosial media komunitas -->
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">WhatsApp</a>
+        <a href="programs.html" data-page><span data-i18n="foot.programs">Programs</span></a>
+        <a href="#faq"><span data-i18n="foot.faq">FAQ</span></a>
+      </nav>
+    </div>
+    <small>© <span id="year">2026</span> <span data-i18n="foot.tail">Dreamy English Community · Pacitan, made with community spirit</span> <i class="bi bi-stars" aria-hidden="true"></i></small>
+  </footer>
+
+  <!-- ==================== MODAL (JOIN) ==================== -->
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="join-title" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel">
+      <button class="modal__close" data-close-modal aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+      <img class="modal__logo" src="assets/img/DMC.webp" alt="" width="967" height="272" loading="lazy" decoding="async">
+      <h3 id="join-title"><span data-i18n="modal.title">Join Dreamy!</span> <i class="bi bi-stars" style="color:var(--coral)" aria-hidden="true"></i></h3>
+      <p class="modal__intro" data-i18n="modal.intro">Three easy steps to join the community:</p>
+      <ol class="modal__steps">
+        <li><span class="n">1</span><span data-i18n="modal.s1">Say hi on our contact, and the admin will greet you.</span></li>
+        <li><span class="n">2</span><span data-i18n="modal.s2">Join the community group for schedules.</span></li>
+        <li><span class="n">3</span><span data-i18n="modal.s3">Show up and shine at the next meetup!</span></li>
+      </ol>
+      <!-- TODO: ganti tautan berikut dengan kontak asli komunitas -->
+      <div class="modal__links">
+        <a class="btn btn--coral" href="#" rel="noopener"><span data-i18n="modal.wa">Chat via WhatsApp</span></a>
+        <a class="btn btn--ghost" href="#" rel="noopener"><span data-i18n="modal.ig">DM via Instagram</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pemilih bahasa melayang: fixed kanan bawah, tetap terpakai saat digulir.
+       Bendera SVG inline (UK / Indonesia / Jerman), pilih via klik atau tap. -->
+  <div class="lang-fab">
+    <div class="lang-pop" id="lang-pop" hidden>
+      <p class="lang-pop__title" data-i18n="lang.title">Language</p>
+      <button type="button" class="lang-pop__item" data-lang-choice="en" aria-pressed="true">
+        <svg class="flag flag--en" viewBox="0 0 60 36" aria-hidden="true" focusable="false"><rect width="60" height="36" fill="#012169"/><path d="M0 0l60 36M60 0L0 36" stroke="#fff" stroke-width="7"/><path d="M0 0l60 36M60 0L0 36" stroke="#C8102E" stroke-width="3"/><path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="11"/><path d="M30 0v36M0 18h60" stroke="#C8102E" stroke-width="6"/></svg>
+        <span data-i18n="lang.en">English</span>
+        <i class="bi bi-check2" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="lang-pop__item" data-lang-choice="id" aria-pressed="false">
+        <svg class="flag flag--id" viewBox="0 0 60 36" aria-hidden="true" focusable="false"><rect width="60" height="18" fill="#CE1126"/><rect y="18" width="60" height="18" fill="#fff"/></svg>
+        <span data-i18n="lang.id">Indonesian</span>
+        <i class="bi bi-check2" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="lang-pop__item" data-lang-choice="de" aria-pressed="false">
+        <svg class="flag flag--de" viewBox="0 0 60 36" aria-hidden="true" focusable="false"><rect width="60" height="12" fill="#1a1a1a"/><rect y="12" width="60" height="12" fill="#DD0000"/><rect y="24" width="60" height="12" fill="#FFCE00"/></svg>
+        <span data-i18n="lang.de">German</span>
+        <i class="bi bi-check2" aria-hidden="true"></i>
+      </button>
+    </div>
+    <button type="button" class="lang-fab__btn" data-lang-toggle aria-expanded="false" aria-controls="lang-pop" aria-label="Pilih bahasa / choose language">
+      <svg class="flag flag--en" viewBox="0 0 60 36" aria-hidden="true" focusable="false"><rect width="60" height="36" fill="#012169"/><path d="M0 0l60 36M60 0L0 36" stroke="#fff" stroke-width="7"/><path d="M0 0l60 36M60 0L0 36" stroke="#C8102E" stroke-width="3"/><path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="11"/><path d="M30 0v36M0 18h60" stroke="#C8102E" stroke-width="6"/></svg>
+      <svg class="flag flag--id" viewBox="0 0 60 36" aria-hidden="true" focusable="false"><rect width="60" height="18" fill="#CE1126"/><rect y="18" width="60" height="18" fill="#fff"/></svg>
+      <svg class="flag flag--de" viewBox="0 0 60 36" aria-hidden="true" focusable="false"><rect width="60" height="12" fill="#1a1a1a"/><rect y="12" width="60" height="12" fill="#DD0000"/><rect y="24" width="60" height="12" fill="#FFCE00"/></svg>
+    </button>
+  </div>
+
+</body>
+</html>

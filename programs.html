@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programs · Dreamy English Community Pacitan</title>
+  <meta name="description" content="Training programs at Dreamy English Community Pacitan: weekly Speaking Club, Dreamy Camp, and Digital Class." />
+  <meta name="theme-color" content="#fdeeda" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <!-- Logo wordmark DMC (asli komunitas) -->
+  <link rel="preload" as="image" type="image/webp" href="assets/img/DMC.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=13" />
+  <!-- Bootstrap Icons: font ikon lokal (assets/vendor) -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" />
+  <!-- Satu modul JS per fungsi; i18n.js dimuat lebih dulu (kamus bahasa) -->
+  <script src="assets/js/i18n.js?v=10" defer></script>
+  <script src="assets/js/transition.js?v=10" defer></script>
+  <script src="assets/js/nav.js?v=10" defer></script>
+  <script src="assets/js/reveal.js?v=10" defer></script>
+  <script src="assets/js/modal.js?v=10" defer></script>
+  <script src="assets/js/stats.js?v=10" defer></script>
+  <script src="assets/js/tilt.js?v=10" defer></script>
+</head>
+
+<body data-meta-title="meta.title.programs" data-meta-desc="meta.desc.programs">
+  <!-- Tirai transisi antar halaman -->
+  <div class="page-curtain" aria-hidden="true">
+    <div class="curtain curtain--a"></div>
+    <div class="curtain curtain--b"><img src="assets/img/DMC.webp" alt="" width="967" height="272" decoding="async"></div>
+  </div>
+
+  <a class="skip-link" href="#main"><span data-i18n="a11y.skip">Skip to content →</span></a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="nav__brand" href="index.html" data-page>
+        <img class="brand-logo" src="assets/img/DMC.webp" alt="Dreamy English Community" width="967" height="272" decoding="async" fetchpriority="high">
+      </a>
+
+      <nav class="nav__links" aria-label="Main">
+        <a href="index.html" data-page><span data-i18n="nav.home">Home</span></a>
+        <a href="index.html#why" data-page><span data-i18n="nav.why">Why Dreamy?</span></a>
+        <a href="programs.html" aria-current="page"><span data-i18n="nav.programs">Programs</span></a>
+        <a href="index.html#voices" data-page><span data-i18n="nav.voices">Voices</span></a>
+        <a href="index.html#faq" data-page><span data-i18n="nav.faq">FAQ</span></a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="btn btn--coral btn--sm" data-open-modal>
+          <span data-i18n="btn.join">Join us</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav__sheet" id="menu-sheet">
+    <button class="sheet__close" data-close-menu aria-label="Close menu / tutup menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+    <a href="index.html" data-page><span data-i18n="nav.home">Home</span></a>
+    <a href="index.html#why" data-page><span data-i18n="nav.why">Why Dreamy?</span></a>
+    <a href="programs.html"><span data-i18n="nav.programs">Programs</span></a>
+    <a href="index.html#voices" data-page><span data-i18n="nav.voices">Voices</span></a>
+    <a href="index.html#faq" data-page><span data-i18n="nav.faq">FAQ</span></a>
+    <button class="btn btn--coral" data-open-modal><span data-i18n="sheet.join">Join the community</span></button>
+    <p class="sheet-tag"><i class="bi bi-stars" aria-hidden="true"></i> <span data-i18n="sheet.tag.programs">Pick your class, come along, keep talking</span></p>
+  </div>
+
+  <main id="main">
+    <!-- Header halaman -->
+    <section class="page-hero" data-bg="#fdeeda">
+      <div class="wrap">
+        <p class="eyebrow reveal" data-i18n="pg.eyebrow">Dreamy programs</p>
+        <h1 class="sticker reveal" style="--d:1"><span data-i18n="pg.rest">Three doors to</span> <span style="color:var(--coral)" data-i18n="pg.hl">fluent-me</span></h1>
+        <p class="section-sub reveal" style="--d:2" data-i18n="pg.sub">Three doors to a more fluent you, starting with the lightest one.</p>
+        <div class="chips reveal" style="--d:3">
+          <span><i class="bi bi-mic-fill" aria-hidden="true"></i> Speaking Club</span>
+          <span><i class="bi bi-tree-fill" aria-hidden="true"></i> Dreamy Camp</span>
+          <span><i class="bi bi-laptop-fill" aria-hidden="true"></i> Digital Class </i></span></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="program-page" data-bg="#e9f7fb">
+      <div class="wrap">
+        <!-- ============ Program 1 ============ -->
+        <article class="program-detail reveal" id="speaking-club">
+          <div class="row">
+            <div class="big-icon" style="--icon-bg: var(--leaf)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="2.5" width="6" height="11" rx="3"/>
+                <path d="M5 11.5a7 7 0 0 0 14 0"/>
+                <path d="M12 18.5V21"/><path d="M8.5 21h7"/>
+              </svg>
+            </div>
+            <div>
+              <h2 class="sticker">Speaking Club</h2>
+              <p class="lead" data-i18n="d1.body">Weekly small-group talking sessions, the heartbeat of the community. Fits beginners through fluent speakers.</p>
+            </div>
+          </div>
+          <!-- TODO: sesuaikan ritme sesi dengan kebiasaan komunitas -->
+          <ul class="flow" data-stagger>
+            <li><em>10’</em><span data-i18n="d1.f1">Check-in with coffee</span></li>
+            <li><em>15’</em><span data-i18n="d1.f2">Ice-breaker game</span></li>
+            <li><em>30’</em><span data-i18n="d1.f3">Buddy talk in pairs</span></li>
+            <li><em>20’</em><span data-i18n="d1.f4">Mini stage: try speaking in front</span></li>
+            <li><em>15’</em><span data-i18n="d1.f5">Warm feedback</span></li>
+          </ul>
+        </article>
+
+        <!-- ============ Program 2 ============ -->
+        <article class="program-detail reveal" id="dreamy-camp">
+          <div class="row">
+            <div class="big-icon" style="--icon-bg: var(--sun)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3l1.2 2.6L16 6.9l-2.8 1.3L12 10.8l-1.2-2.6L8 6.9l2.8-1.3z"/>
+                <path d="M4 20l4-7 2.4 4.2L12 15l2.4 3.1L20 13"/>
+                <circle cx="18.5" cy="7" r="1.6"/>
+              </svg>
+            </div>
+            <div>
+              <h2 class="sticker">Dreamy Camp</h2>
+              <p class="lead" data-i18n="d2.body">A seasonal 2-day speak-up camp: performance night, team quests, campfire talk.</p>
+            </div>
+          </div>
+          <ul class="flow" data-stagger>
+            <li><em>Day 1</em><span data-i18n="d2.f1">Arrival and ice games</span></li>
+            <li><em>Day 1</em><span data-i18n="d2.f2">Team quests, English only!</span></li>
+            <li><em>Night</em><span data-i18n="d2.f3">Campfire talk</span></li>
+            <li><em>Day 2</em><span data-i18n="d2.f4">Outdoor session</span></li>
+            <li><em>Home</em><span data-i18n="d2.f5">Keep the memories</span></li>
+          </ul>
+        </article>
+
+        <!-- ============ Program 3 ============ -->
+        <article class="program-detail reveal" id="digital-class">
+          <div class="row">
+            <div class="big-icon" style="--icon-bg: var(--sky)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4.5" width="18" height="12" rx="2.5"/>
+                <path d="M9 20h6"/><path d="M12 16.5V20"/>
+                <path d="M10 8.2l4 2.3-4 2.3z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="soon-note"><i class="bi bi-hourglass-split" aria-hidden="true"></i> <span data-i18n="soon.badge">Coming soon</span></span>
+              <h2 class="sticker">Digital Class</h2>
+              <p class="lead" data-i18n="d3.body">Short online classes: pronunciation, grammar pills, presentation basics.</p>
+            </div>
+          </div>
+          <ul class="flow" data-stagger>
+            <li><em>Live</em><span data-i18n="d3.f1">Online class each week</span></li>
+            <li><em>Pills</em><span data-i18n="d3.f2">5-minute grammar pills</span></li>
+            <li><em>Drill</em><span data-i18n="d3.f3">Self-paced drills</span></li>
+            <li><em>Gig</em><span data-i18n="d3.f4">Mini presentation gigs</span></li>
+            <li><em>Cert</em><span data-i18n="d3.f5">Small certificate</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="join" id="join" data-bg="#ffeee9">
+      <div class="wrap">
+        <p class="eyebrow reveal" data-i18n="jn2.eyebrow">Pick one, or all three</p>
+        <h2 class="reveal sticker" style="--d:1"><span data-i18n="jn2.rest">See you at the</span> <span style="color:var(--coral)" data-i18n="jn2.hl">next meetup</span></h2>
+        <p class="section-sub reveal" style="--d:2" data-i18n="jn2.sub">No level bar to clear, just the intention to come. We clear the rest together.</p>
+        <div class="join__cta reveal" style="--d:3">
+          <button class="btn btn--coral" data-open-modal><span data-i18n="jn1.cta">Join us now</span></button>
+          <a class="btn btn--ghost" href="index.html" data-page><span data-i18n="jn.back">Back to home</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <p class="brand">Dreamy English Community</p>
+        <p data-i18n="foot.about">Learning English together with the Pacitan community, a human way.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <!-- TODO: ganti tautan sosial media komunitas -->
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">WhatsApp</a>
+        <a href="index.html" data-page><span data-i18n="nav.home">Home</span></a>
+        <a href="index.html#faq" data-page><span data-i18n="nav.faq">FAQ</span></a>
+      </nav>
+    </div>
+    <small>© <span id="year">2026</span> <span data-i18n="foot.tail">Dreamy English Community · Pacitan, made with community spirit</span> <i class="bi bi-stars" aria-hidden="true"></i></small>
+  </footer>
+
+  <!-- Modal join (identik dengan halaman utama) -->
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="join-title" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel">
+      <button class="modal__close" data-close-modal aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+      <img class="modal__logo" src="assets/img/DMC.webp" alt="" width="967" height="272" loading="lazy" decoding="async">
+      <h3 id="join-title"><span data-i18n="modal.title">Join Dreamy!</span> <i class="bi bi-stars" style="color:var(--coral)" aria-hidden="true"></i></h3>
+      <p class="modal__intro" data-i18n="modal.intro">Three easy steps to join the community:</p>
+      <ol class="modal__steps">
+        <li><span class="n">1</span><span data-i18n="modal.s1">Say hi on our contact, and the admin will greet you.</span></li>
+        <li><span class="n">2</span><span data-i18n="modal.s2">Join the community group for schedules.</span></li>
+        <li><span class="n">3</span><span data-i18n="modal.s3">Show up and shine at the next meetup!</span></li>
+      </ol>
+      <!-- TODO: ganti tautan berikut dengan kontak asli komunitas -->
+      <div class="modal__links">
+        <a class="btn btn--coral" href="#" rel="noopener"><span data-i18n="modal.wa">Chat via WhatsApp</span></a>
+        <a class="btn btn--ghost" href="#" rel="noopener"><span data-i18n="modal.ig">DM via Instagram</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pemilih bahasa melayang: fixed kanan bawah, tetap terpakai saat digulir.
+       Bendera SVG inline (UK / Indonesia / Jerman), pilih via klik atau tap. -->
+  <div class="lang-fab">
+    <div class="lang-pop" id="lang-pop" hidden>
+      <p class="lang-pop__title" data-i18n="lang.title">Language</p>
+      <button type="button" class="lang-pop__item" data-lang-choice="en" aria-pressed="true">
+        <svg class="flag flag--en" viewBox="0 0 60 36" aria-hidden="true" focusable="false"><rect width="60" height="36" fill="#012169"/><path d="M0 0l60 36M60 0L0 36" stroke="#fff" stroke-width="7"/><path d="M0 0l60 36M60 0L0 36" stroke="#C8102E" stroke-width="3"/><path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="11"/><path d="M30 0v36M0 18h60" stroke="#C8102E" stroke-width="6"/></svg>
+        <span data-i18n="lang.en">English</span>
+        <i class="bi bi-check2" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="lang-pop__item" data-lang-choice="id" aria-pressed="false">
+        <svg class="flag flag--id" viewBox="0 0 60 36" aria-hidden="true" focusable="false"><rect width="60" height="18" fill="#CE1126"/><rect y="18" width="60" height="18" fill="#fff"/></svg>
+        <span data-i18n="lang.id">Indonesian</span>
+        <i class="bi bi-check2" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="lang-pop__item" data-lang-choice="de" aria-pressed="false">
+        <svg class="flag flag--de" viewBox="0 0 60 36" aria-hidden="true" focusable="false"><rect width="60" height="12" fill="#1a1a1a"/><rect y="12" width="60" height="12" fill="#DD0000"/><rect y="24" width="60" height="12" fill="#FFCE00"/></svg>
+        <span data-i18n="lang.de">German</span>
+        <i class="bi bi-check2" aria-hidden="true"></i>
+      </button>
+    </div>
+    <button type="button" class="lang-fab__btn" data-lang-toggle aria-expanded="false" aria-controls="lang-pop" aria-label="Pilih bahasa / choose language">
+      <svg class="flag flag--en" viewBox="0 0 60 36" aria-hidden="true" focusable="false"><rect width="60" height="36" fill="#012169"/><path d="M0 0l60 36M60 0L0 36" stroke="#fff" stroke-width="7"/><path d="M0 0l60 36M60 0L0 36" stroke="#C8102E" stroke-width="3"/><path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="11"/><path d="M30 0v36M0 18h60" stroke="#C8102E" stroke-width="6"/></svg>
+      <svg class="flag flag--id" viewBox="0 0 60 36" aria-hidden="true" focusable="false"><rect width="60" height="18" fill="#CE1126"/><rect y="18" width="60" height="18" fill="#fff"/></svg>
+      <svg class="flag flag--de" viewBox="0 0 60 36" aria-hidden="true" focusable="false"><rect width="60" height="12" fill="#1a1a1a"/><rect y="12" width="60" height="12" fill="#DD0000"/><rect y="24" width="60" height="12" fill="#FFCE00"/></svg>
+    </button>
+  </div>
+
+</body>
+</html>
