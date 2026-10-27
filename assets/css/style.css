@@ -1124,10 +1124,16 @@ body.menu-open { overflow: hidden; }
   background: color-mix(in srgb, var(--ink) 60%, transparent);
   backdrop-filter: blur(5px);
 }
-.modal__panel {
+.modal__shell {
   position: relative;
   width: min(100%, 480px);
-  max-height: calc(100dvh - 2.6rem); /* layar kecil: panel bisa digulir */
+  max-width: 480px;
+  margin: auto;
+}
+.modal__panel {
+  position: relative;
+  width: 100%;
+  max-height: calc(100dvh - 3rem); /* layar kecil: panel bisa digulir */
   overflow: auto;
   background: var(--cream);
   border: 3px solid var(--ink);
@@ -1137,7 +1143,7 @@ body.menu-open { overflow: hidden; }
 }
 .modal__close {
   position: absolute;
-  top: -16px; right: -10px;
+  top: -18px; right: -12px;
   width: 44px; height: 44px;
   background: var(--coral);
   color: var(--paper);
@@ -1146,9 +1152,11 @@ body.menu-open { overflow: hidden; }
   display: grid; place-items: center;
   box-shadow: 3px 3px 0 var(--ink);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  z-index: 2;
+  z-index: 10;
+  cursor: pointer;
 }
-.modal__close:hover { transform: rotate(8deg) scale(1.06); }
+.modal__close:hover { transform: rotate(8deg) scale(1.08); }
+.modal__close:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ink); }
 .modal__close svg { width: 18px; }
 /* Logo komunitas di atas judul modal */
 .modal__logo {
@@ -1189,12 +1197,6 @@ body.menu-open { overflow: hidden; }
 .modal__links { display: grid; gap: 0.7rem; }
 
 /* ---------- Modal Khusus: Under Development ---------- */
-.modal__shell {
-  position: relative;
-  width: min(100%, 480px);
-  max-width: 480px;
-  margin: auto;
-}
 .dev-modal__close {
   position: absolute;
   top: -18px;
@@ -1320,30 +1322,73 @@ body.menu-open { overflow: hidden; }
   gap: 0.45em;
 }
 
-/* Penyesuaian mobile: tidak perlu scroll, tombol close tetap diluar */
+/* Penyesuaian mobile: tidak perlu scroll, tombol close tetap diluar untuk SEMUA modal */
 @media (max-width: 600px) {
-  .modal.modal--dev {
+  .modal {
     padding: 0.85rem;
   }
+  .modal__shell,
   .dev-modal__shell {
     width: 100%;
     max-width: 400px;
   }
+  .modal__close,
   .dev-modal__close {
     top: -14px;
     right: -6px;
     width: 38px;
     height: 38px;
     box-shadow: 2px 2px 0 var(--ink);
+    z-index: 10;
   }
+  .modal__close svg,
   .dev-modal__close svg {
     width: 16px;
   }
+  .modal__panel,
   .dev-modal__panel {
     padding: 1.25rem 1rem 1.1rem;
     max-height: none; /* Di mobile pas di layar, tanpa perlu scroll */
     overflow: visible;
     box-shadow: 6px 7px 0 color-mix(in srgb, var(--ink) 45%, transparent);
+  }
+  .modal__logo {
+    width: min(135px, 40%);
+    margin: 0 auto 0.6rem;
+  }
+  .modal h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.25rem;
+  }
+  .modal__intro {
+    font-size: 0.86rem;
+    margin-bottom: 0.75rem;
+  }
+  .modal__steps {
+    gap: 0.45rem;
+    margin-bottom: 0.85rem;
+  }
+  .modal__steps li {
+    padding: 0.45rem 0.65rem;
+    font-size: 0.82rem;
+    gap: 0.55rem;
+    border-radius: 13px;
+  }
+  .modal__steps .n {
+    width: 26px;
+    height: 26px;
+    font-size: 0.8rem;
+  }
+  .modal__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  .modal__links .btn {
+    padding: 0.65em 0.4em;
+    font-size: 0.84rem;
+    justify-content: center;
+    text-align: center;
   }
   .dev-modal__badge {
     padding: 0.25rem 0.75rem;

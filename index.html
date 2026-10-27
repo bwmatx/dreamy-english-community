@@ -11,7 +11,8 @@
   <meta property="og:image" content="assets/img/DMC.webp" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#fdeeda" />
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="icon" type="image/webp" href="assets/img/favicon.webp" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.webp" />
   <!-- Logo wordmark DMC (asli komunitas) -->
   <link rel="preload" as="image" type="image/webp" href="assets/img/DMC.webp" />
 
@@ -527,22 +528,25 @@
   <!-- ==================== MODAL (JOIN) ==================== -->
   <div class="modal" id="modal-join" role="dialog" aria-modal="true" aria-labelledby="join-title" hidden>
     <div class="modal__backdrop" data-close-modal></div>
-    <div class="modal__panel">
-      <button class="modal__close" data-close-modal aria-label="Close">
+    <div class="modal__shell">
+      <button class="modal__close" data-close-modal aria-label="Tutup / Close">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
       </button>
-      <img class="modal__logo" src="assets/img/DMC.webp" alt="" width="967" height="272" loading="lazy" decoding="async">
-      <h3 id="join-title"><span data-i18n="modal.title">Join Dreamy!</span> <i class="bi bi-stars" style="color:var(--coral)" aria-hidden="true"></i></h3>
-      <p class="modal__intro" data-i18n="modal.intro">Three easy steps to join the community:</p>
-      <ol class="modal__steps">
-        <li><span class="n">1</span><span data-i18n="modal.s1">Say hi on our contact, and the admin will greet you.</span></li>
-        <li><span class="n">2</span><span data-i18n="modal.s2">Join the community group for schedules.</span></li>
-        <li><span class="n">3</span><span data-i18n="modal.s3">Show up and shine at the next meetup!</span></li>
-      </ol>
-      <!-- TODO: ganti tautan berikut dengan kontak asli komunitas -->
-      <div class="modal__links">
-        <a class="btn btn--coral" href="#" rel="noopener"><span data-i18n="modal.wa">Chat via WhatsApp</span></a>
-        <a class="btn btn--ghost" href="#" rel="noopener"><span data-i18n="modal.ig">DM via Instagram</span></a>
+
+      <div class="modal__panel">
+        <img class="modal__logo" src="assets/img/DMC.webp" alt="" width="967" height="272" loading="lazy" decoding="async">
+        <h3 id="join-title"><span data-i18n="modal.title">Join Dreamy!</span> <i class="bi bi-stars" style="color:var(--coral)" aria-hidden="true"></i></h3>
+        <p class="modal__intro" data-i18n="modal.intro">Three easy steps to join the community:</p>
+        <ol class="modal__steps">
+          <li><span class="n">1</span><span data-i18n="modal.s1">Say hi on our contact, and the admin will greet you.</span></li>
+          <li><span class="n">2</span><span data-i18n="modal.s2">Join the community group for schedules.</span></li>
+          <li><span class="n">3</span><span data-i18n="modal.s3">Show up and shine at the next meetup!</span></li>
+        </ol>
+        <!-- TODO: ganti tautan berikut dengan kontak asli komunitas -->
+        <div class="modal__links">
+          <a class="btn btn--coral" href="#" rel="noopener"><span data-i18n="modal.wa">Chat via WhatsApp</span></a>
+          <a class="btn btn--ghost" href="#" rel="noopener"><span data-i18n="modal.ig">DM via Instagram</span></a>
+        </div>
       </div>
     </div>
   </div>
